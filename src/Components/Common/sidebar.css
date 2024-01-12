@@ -1,0 +1,157 @@
+.sidbarWrap{
+display: flex;
+padding: 62px 6px 0px 34px;
+flex-direction: column;
+align-items: center;
+background: #333;
+width: 380px;
+min-height: 100vh;
+height: auto;
+overflow: hidden;
+}
+.sideContain{
+    width: 310px;
+    background-color: beige;
+color: white;
+display: flex;
+flex-direction: column;
+gap: 65px;
+}
+
+@media (max-width:550px) {
+    .sidbarWrap{
+        padding: 62px 0px 0px 0px;
+    }
+
+    .sideContain{
+        width: 100%;
+    }
+}
+
+.profile{
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    justify-content: end;
+    background-color: red;
+}
+.profile .indentity{
+   width: 206px;
+   height: 50px;
+   display: flex;
+   gap: 5px;
+   flex-direction: column;
+}
+.profile .indentity .name{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; 
+}
+.profile .indentity .userId{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    opacity: 90%;
+    line-height: 140%;
+}
+
+.sideContain .navItems{
+    width: 206px;
+    height: 291px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* margin: 0px 0px 0px 59px; */
+}
+
+.sideContain .navItems .item{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 140%; 
+    cursor: pointer;
+}
+
+.sideContain .navItems .active{
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-underline-offset: 4px; 
+}
+
+.showConnect{
+    display: flex;
+    justify-content: center;
+    transform: translateX(-12px);
+    margin: 0px 0px 15px 0px;
+    background-color: red;
+}
+
+.showConnect button{
+    display: inline-flex;
+    padding: 10px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+background: #3596E3;
+}
+.showConnect button span{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+}
+
+@media (min-width:1550px) {
+    .sidbarWrap{
+    width: 28.5%;
+    
+    }
+}
+
+@media (max-width:1200px) {
+    .sidbarWrap{
+      width: 330px;
+    }
+}
+
+@media (max-width:970px) {
+    .sidbarWrap{
+        display: none;
+        width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+}
+
+.active2{
+    display: block;
+    animation-name: showSidebar;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+position: absolute;
+min-height: 100vh;
+height: 100%;
+z-index: 100;
+}
+
+@keyframes showSidebar {
+    0%{
+        transform: translateX(-100vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+}
