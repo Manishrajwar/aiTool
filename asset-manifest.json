@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/aiTool/static/css/main.19a867a5.css",
+    "main.js": "/aiTool/static/js/main.f4fa37e7.js",
+    "static/media/_f9a498ac-e8b9-42a4-9a34-2cf4dcfac423 1.png": "/aiTool/static/media/_f9a498ac-e8b9-42a4-9a34-2cf4dcfac423 1.19cd667998115d641524.png",
+    "index.html": "/aiTool/index.html",
+    "main.19a867a5.css.map": "/aiTool/static/css/main.19a867a5.css.map",
+    "main.f4fa37e7.js.map": "/aiTool/static/js/main.f4fa37e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19a867a5.css",
+    "static/js/main.f4fa37e7.js"
+  ]
+}
